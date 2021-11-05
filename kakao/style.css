@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+  font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+header {
+  height:75px;
+}
+
+.wrap_header {
+  width: 952px;
+  margin:0 auto;
+  padding:24px 0;
+  display:flex;
+  justify-content: space-between;
+}
+
+.wrap_header h1{
+  display:inline-block;
+}
+
+.logo-kakao {
+  height:24px;
+}
+
+.menu_header {
+  display:inline-flex;
+  justify-content: space-between;
+  width:450px;
+}
+.menu_header li {
+  display: inline-block;
+  font-size:16px;
+  font-weight:600;
+  padding-top:10px;
+}
+
+.area_util ul{
+  width:140px;
+  display:inline-flex;
+  justify-content: space-between;
+}
+.area_util ul li {
+  display:inline-block;
+}
+
+.area_util ul li button{
+  background-color: transparent;
+  border:0px;
+  width:34px;
+  height:24px;
+  font-size:34px;
+}
+
+.area_util ul li button:hover{
+  cursor:pointer;
+}
+
+/* section1 */
+.content-article{
+  height:176px;
+  width: 952px;
+  font-weight:700;
+  font-size:36px;
+  padding-top:72px;
+  margin:0 auto;
+}
+
+.content-article::before{
+  background: url("./image/ico_date5.gif") no-repeat;
+  background-size:contain;
+  content:'';
+  display:inline-block;  
+  width:60px;
+  height:60px;
+  vertical-align: -20px;
+}
+
+.content-article h3{
+  display:inline-block;
+}
