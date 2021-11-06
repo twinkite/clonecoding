@@ -9,7 +9,7 @@ header {
 }
 
 .wrap_header {
-  width: 952px;
+  width: 1296px;
   margin:0 auto;
   padding:24px 0;
   display:flex;
@@ -21,7 +21,7 @@ header {
 }
 
 .logo-kakao {
-  height:24px;
+  height:28px;
 }
 
 .menu_header {
@@ -36,6 +36,11 @@ header {
   padding-top:10px;
 }
 
+.menu_header li a {
+  display:block;
+
+}
+
 .area_util ul{
   width:140px;
   display:inline-flex;
@@ -48,8 +53,8 @@ header {
 .area_util ul li button{
   background-color: transparent;
   border:0px;
-  width:34px;
-  height:24px;
+  width:100%;
+  height:100%;
   font-size:34px;
 }
 
@@ -60,23 +65,32 @@ header {
 /* section1 */
 .content-article{
   height:176px;
-  width: 952px;
-  font-weight:700;
-  font-size:36px;
-  padding-top:72px;
+  width: 1296px;
+  font-weight:600;
+  font-size:46px;
+  padding-top:96px;
   margin:0 auto;
 }
 
-.content-article::before{
+.content-article h3::before{
   background: url("./image/ico_date5.gif") no-repeat;
   background-size:contain;
   content:'';
   display:inline-block;  
-  width:60px;
-  height:60px;
-  vertical-align: -20px;
+  width:70px;
+  height:70px;
+  vertical-align: -18px;
 }
 
 .content-article h3{
+  display:inline-block; 
+}
+
+.emph_title{
   display:inline-block;
+  padding-left:10px;
+}
+
+.txt_title{
+  line-height:64px;
 }
