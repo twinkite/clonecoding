@@ -8,12 +8,21 @@ header {
   height:75px;
 }
 
+.screen-out {
+  position:absolute;
+  width:1px;
+  height:1px;
+  clip:rect(0,0,0,0);
+}
+
 .wrap_header {
-  width: 1296px;
+  width:100%;
+  max-width: 1296px;
   margin:0 auto;
-  padding:24px 0;
+  padding: 0;
   display:flex;
   justify-content: space-between;
+  background-color: white;
 }
 
 .wrap_header h1{
@@ -21,14 +30,22 @@ header {
 }
 
 .logo-kakao {
+  padding-top:24px;
   height:28px;
 }
 
 .menu_header {
+  padding:20px;
   display:inline-flex;
   justify-content: space-between;
   width:450px;
 }
+
+.menu_header:hover li a {
+  color:gainsboro;
+}
+
+
 .menu_header li {
   display: inline-block;
   font-size:16px;
@@ -36,11 +53,16 @@ header {
   padding-top:10px;
 }
 
+.menu_header li:hover a {
+  color:black;
+}
+
 .menu_header li a {
   display:block;
 }
 
 .area_util ul{
+  padding-top:24px;
   width:140px;
   display:inline-flex;
   justify-content: space-between;
@@ -49,58 +71,155 @@ header {
   display:inline-flex;
   justify-content: center;
   align-items: center;
-  width:40px;
-  height:40px;
-  border-radius: 20px;
 }
-
-.area_util ul li:hover{
-  cursor:pointer;
-  background-color: gainsboro;
-}
-
 
 .area_util ul li button{
   background-color: transparent;
   border:0px;
-  width:14px;
-  height:14px;
-  padding:10px;
-  border:3px solid black;
-  border-radius: 14px;
+  width:40px;
+  height:40px;
+  border-radius: 20px;
   font-size:34px;
 }
 
+.area_util ul li i {
+  font-size:20px;
+  vertical-align: 10px;
+}
+.area_util ul li button:hover{
+  cursor:pointer;
+  background-color: gainsboro;
+}
 
 /* section1 */
-.content-article{
-  height:176px;
+
+main {
   width: 1296px;
+  margin:0 auto;
+}
+.content-header{
+  height:176px;
+  width:100%;
   font-weight:600;
   font-size:46px;
   padding-top:96px;
-  margin:0 auto;
 }
 
-.content-article h3::before{
+.content-header em::before{
   background: url("./image/ico_date5.gif") no-repeat;
   background-size:contain;
-  content:'';
   display:inline-block;  
+  content:'';
   width:70px;
   height:70px;
   vertical-align: -18px;
 }
 
-.content-article h3{
+.content-header h3{
   display:inline-block; 
 }
 
 .emph_title{
-  display:inline-block;
-  padding-left:10px;
+  display:block;
 }
 
 .txt_title{
   line-height:64px;
+}
+
+/* content */
+
+.main-content {
+  padding-top:42px;
+}
+.content-card {
+  border-radius: 20px;
+  box-shadow: 5px 8px 20px 5px rgba(0,0,0,0.1);
+}
+
+.content-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 5px 8px 15px 10px rgba(0,0,0,0.1);
+}
+
+.content-card:nth-child(1) {
+  width: 625px;
+  height:700px;
+}
+
+.card-nav {
+  position:relative;
+  padding:25px 35px 25px 24px; 
+  justify-content:space-between;
+  overflow: hidden;
+}
+
+.card-nav i {
+  color:gray;
+}
+
+.card-nav .press {
+  position:relative;
+  width:47px;
+  height:14px;
+  display:block;
+  float:left;
+  font-size:13px;
+  padding:10px 13px;
+  margin-left:10px;
+  border-radius: 10px;
+  background-color: gainsboro;
+}
+
+.card-nav .press::after {
+  position:absolute;
+  top:-2px;
+  left: 1px;
+  width:5px;
+  height:34px;
+  background-color: gainsboro;
+  display: block;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 4px;
+  content: '';
+}
+
+.card-nav i {
+  float:right;
+}
+
+.card-nav::before {
+  background: url("./image/speaker.png") no-repeat;
+  background-size:contain;
+  display:block;  
+  width:30px;
+  height:30px;
+  content:'';
+  float:left;
+}
+
+.card-header {
+  padding: 0 24px;
+}
+
+.card-header {
+  height: 147px;
+}
+
+.card-title {
+  font-size:32px;
+  font-weight:600;
+  line-height:38px;
+  margin-bottom:30px;
+}
+
+.hashtag {
+  color:grey;
+  font-size:14px;
+}
+
+.news-img {
+  width:100%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }

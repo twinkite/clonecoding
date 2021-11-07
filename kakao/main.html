@@ -6,15 +6,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./style.css">
 	<link rel="stylesheet" href="./reset.css">
+	<script src="https://kit.fontawesome.com/78e81e3ed8.js" crossorigin="anonymous"></script>
+
 	<title>카카오</title>
 </head>
 <body>
 	<header>
 		<div class="wrap_header">
 			<h1>
-				<a href="#"><img src="./image/kakao.png" alt="kakao" class="logo-kakao"></a>
+				<a href="#"><span class="screen-out">kakao</span><img src="./image/kakao.png" alt="kakao" class="logo-kakao"></a>
 			</h1>
 			<nav>
+				<h2 class="screen-out">메인 메뉴</h2>
 				<ul class="menu_header">
 					<li><a href="#">카카오</a></li>
 					<li><a href="#">뉴스</a></li>
@@ -25,23 +28,42 @@
 			<div class="area_util">
 				<ul>
 					<li>
-						<button></button>
+						<button><span class="screen-out">검색창 열기</span><i class="fas fa-search"></i></button>
 					</li>
 					<li>
-						<button></button>
+						<button><span class="screen-out">영어로 보기</span><i class="fas fa-globe"></i></button>
 					</li>
 					<li>
-						<button></button>
+						<button><span class="screen-out">다크모드로 변경하기</span><i class="far fa-moon"></i></button>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</header>
 	<main>
-	<section class="content-article">
+	<section class="content-header">
+		<h2 class="screen-out">홈 본문</h2>
 		<h3><em class="emph_title">오늘의 게터디</em>
-			<div class="txt_title">11월 6일 토요일 시작입니다.</div>
+			<span class="txt_title">11월 6일 토요일 시작입니다.</span>
 		</h3>
+	</section>
+	<section class="main-content">
+		<article class="content-card">
+			<nav class="card-nav"> 
+				<span class="press">보도자료</span>
+				<i class="fas fa-ellipsis-v"></i>
+			</nav>
+			<a href="#">
+			<header class="card-header">
+				<h2 class="card-title">게터디엔터테인먼트, 거제시 주최 '2021 거제코딩공모전' 단독 후원사로 참여</h2>
+				<span class="hashtag">
+					#게터디엔터에인먼트 #게터디페이지 #거제시
+				</span>	
+			</header>
+			<img src="./image/news_img.jpg" alt="서울웹툰공모전이미지" class="news-img">
+			</a>
+		</article>
+		
 	</section>
 	</main>
 	<footer></footer>
